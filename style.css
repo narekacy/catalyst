@@ -84,6 +84,10 @@ a {
     position: center;
 }
 
+.container p{
+    text-align: center;
+}
+
 img {
     height: 100%;
     width: 100%;
@@ -135,7 +139,7 @@ img {
 
 .map {
     width:100%;
-    height: 600px;
+    height: 300px;
 }
 
 p {
@@ -163,7 +167,7 @@ p {
 
 /* Main Section */
 #main {
-    background-image: url(./img/main-bg.jpeg);
+    background-image: url(img/katalizatory.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -238,6 +242,10 @@ p {
     margin-left: 10px;
 }
 
+#main ul span {
+    color: #fff618;
+}
+
 #main .main-title-third{
     font-size: 25px;
     color: #ffffff;
@@ -247,7 +255,104 @@ p {
     margin-top: -50px;
 }
 
+#main .main-title-third span{
+    color: #fff618;
+}
+
 .main-title-forth{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#main2 {
+    background-image: url(img/radiodetali.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+#main2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#main2 .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#main2 h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal_name_1 .5s ease forwards;
+    animation-delay: 1s;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#main2 .main-title-second, #main .main-content {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.2s;
+    font-size: 30px;
+}
+
+#main2 .main-content{
+    opacity: 0;
+}
+
+#main2 .main-title-second{
+    color: transparent;
+    text-align: center;
+}
+
+#main2 h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff618;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .1s;
+}
+
+#main2 ul {
+    color: #ffffff;
+    list-style-type:none;
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left:20px;
+    padding-bottom: 60px;
+    margin-left: 10px;
+}
+
+#main2 .main-title-third{
+    font-size: 25px;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.main2-title-forth{
     font-size: 25px;
     padding-top: 30px;
     padding-bottom: 15px;
@@ -327,10 +432,10 @@ p {
 }
 
 #footer .footer {
-    min-height: 10px;
+    min-height: 2px;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #footer h2 {
