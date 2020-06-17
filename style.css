@@ -246,6 +246,10 @@ p {
     color: #fff618;
 }
 
+#main ul #additional {
+    font-size: 70%;
+}
+
 #main .main-title-third{
     font-size: 25px;
     color: #ffffff;
@@ -610,10 +614,11 @@ p {
 }
 
 /* End Keyframes */
-@media (max-width:465px){
-    #main .main{
+@media (max-width:465px) {
+    #main .main {
         padding: 0 10px;
     }
+
     /* Media Query For Tablet */
     @media only screen and (min-width: 768px) {
         .cta {
@@ -734,7 +739,6 @@ p {
     }
 
     /* End Media Query For Tablet */
-
     /* Media Query For Desktop */
     @media only screen and (min-width: 1200px) {
         /* header */
@@ -768,5 +772,6 @@ p {
             margin: 1.5%;
         }
     }
+}
 
 /* End  Media Query For Desktop */
